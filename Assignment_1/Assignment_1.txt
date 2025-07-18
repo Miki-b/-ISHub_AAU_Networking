@@ -1,0 +1,28 @@
+
+1. The practice of connecting computers and other devices to share resources and information.
+2. It enables communication, resource sharing, and centralized data management across devices.
+3. B. Sharing of data and resources between computers**
+4. A network is a group of interconnected devices; the **internet** is a global system of interconnected networks.
+5. The internet is a collection of networks connected together using standardized protocols.
+6. Email communication
+   File sharing and cloud storage
+   Web browsing and online research
+7. Bus: All devices share a single communication line.
+   Star: All devices connect to a central hub or switch.
+   Ring: Each device connects to two others, forming a circular pathway.
+8. B. Star
+9. Advantages:High fault tolerance
+              Direct connections offer high performance
+   Disadvantages:Expensive due to many cables
+                 complex installation and maintenance
+10.LAN(Local Area Network): Covers a small area like an office or building.
+   MAN(Metropolitan Area Network): Covers a city or large campus.
+   WAN(Wide Area Network): Covers large geographical areas, often worldwide.
+11.LAN — because it is cost-effective, easy to set up, and sufficient for limited-area networking needs.
+12. D. WAN
+13.Router: Connects different networks and directs data packets.
+   Switch: Connects devices within a LAN and manages data flow.
+   Hub: Broadcasts data to all connected devices (less efficient).
+   Modem: Converts digital signals to analog for internet access and vice versa.
+14. A switch sends data only to the intended device; a **hub** broadcasts data to all devices.
+15. True

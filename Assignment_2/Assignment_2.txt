@@ -1,0 +1,179 @@
+ISHub AAU Summer Bootcamp – Networking Track
+Assignment 002 – Communication Channels, Communication Models & OSI Model
+
+Name: Michael Behailu
+Track: Networking
+Date: July 18, 2025
+
+==================================================
+SECTION 1: COMMUNICATION CHANNELS
+==================================================
+
+1. Differences between STP and UTP cables:
+- STP (Shielded Twisted Pair): Has shielding to reduce EMI.
+- UTP (Unshielded Twisted Pair): No shielding, cheaper, easier to install.
+
+2. Advantages and Disadvantages of STP:
+- Advantages: Better noise resistance, ideal for industrial areas.
+- Disadvantages: More expensive, harder to bend/install.
+
+3. Coaxial Cable:
+- Definition: Cable with a central conductor, insulating layer, and metallic shield.
+- Uses: Cable TV distribution, older LAN networks.
+
+4. BNC Connector:
+- Function: Connects coaxial cables.
+- Usage: CCTV systems, early Ethernet networks.
+
+5. RJ45 vs RJ11:
+- RJ45: 8 pins, used for Ethernet.
+- RJ11: 4/6 pins, used in telephony.
+
+6. UTP Cable Specs:
+- Cat 5e: Up to 1 Gbps, 100 meters.
+- Cat 6: Up to 10 Gbps (up to 55m), 100 meters.
+
+7. Types of Fiber Optic Cables:
+- Single-mode: Long-distance, narrow core.
+- Multi-mode: Short-distance, wider core.
+
+8. Single-mode vs Multi-mode:
+- Single-mode: Higher capacity, longer range.
+- Multi-mode: Lower cost, shorter range.
+
+9. Advantages of Fiber Optic over Copper:
+- Higher bandwidth and speed.
+- Immune to EMI.
+
+10. T568A and T568B Wiring Standards:
+
+T568A            T568B
+--------         --------
+1. White/Green   1. White/Orange
+2. Green         2. Orange
+3. White/Orange  3. White/Green
+4. Blue          4. Blue
+5. White/Blue    5. White/Blue
+6. Orange        6. Green
+7. White/Brown   7. White/Brown
+8. Brown         8. Brown
+
+11. Straight-through Cable:
+- Use: Connect different devices like:
+  * PC → Switch
+  * Router → Switch
+
+12. Crossover Cable:
+- Use: Connect similar devices like:
+  * PC → PC (peer-to-peer)
+
+13. Tools for Ethernet Cables:
+- Crimping tool
+- Cable tester
+
+14. Fill in the blanks:
+- A straight-through cable connects **different devices**.
+- A crossover cable connects **similar devices**.
+
+15. Cable Comparison Table:
+
+Cable Type   | Cost   | Speed        | Interference
+-------------|--------|--------------|--------------
+Coaxial      | Medium | Medium       | Low
+Twisted Pair | Low    | Medium-High  | Medium
+Fiber Optic  | High   | Very High    | Very Low
+
+==================================================
+SECTION 2: COMMUNICATION MODELS
+==================================================
+
+16. Communication Model:
+- A framework that describes data transfer between two devices.
+
+17. Three Data Flow Types:
+- Simplex: One-way (e.g., TV broadcast)
+- Half-Duplex: Two-way, one at a time (e.g., walkie-talkie)
+- Full-Duplex: Two-way, simultaneous (e.g., phone call)
+
+18. Simplex vs Half-Duplex vs Full-Duplex:
+- Simplex: One-direction only (keyboard → PC)
+- Half-Duplex: Both directions, not simultaneous (walkie-talkies)
+- Full-Duplex: Both directions simultaneously (video call)
+
+19. Importance of Protocol:
+- Protocols define rules for communication, ensuring interoperability.
+
+20. Basic Elements of a Communication System:
+- Sender, Message, Medium, Receiver, Encoder/Decoder, Protocol
+
+==================================================
+SECTION 3: OSI MODEL
+==================================================
+
+21. Seven Layers of OSI Model (Top → Bottom):
+1. Application
+2. Presentation
+3. Session
+4. Transport
+5. Network
+6. Data Link
+7. Physical
+
+22. Match OSI Layers with Protocols:
+- Application: HTTP
+- Transport: TCP
+- Network: IP
+- Data Link: Ethernet
+- Physical: Fiber Optic Cable
+
+23. Transport Layer (Layer 4):
+- Ensures end-to-end reliable transmission with segmentation and error handling.
+- Protocols: TCP, UDP
+
+24. IP Addressing:
+- Occurs at Network Layer (Layer 3).
+- Responsible for logical addressing and routing.
+
+25. Data Unit Names by Layer:
+- Layer 4 (Transport): Segment
+- Layer 3 (Network): Packet
+- Layer 2 (Data Link): Frame
+- Layer 1 (Physical): Bits
+
+26. Router vs Switch vs Hub:
+
+Device  | Function                     | OSI Layer
+--------|------------------------------|------------
+Router  | Routes packets between networks | Layer 3
+Switch  | Forwards data to correct MAC   | Layer 2
+Hub     | Broadcasts data to all ports   | Layer 1
+
+27. File Transfer via OSI Layers:
+- Application: User sends file.
+- Presentation: Formats/encrypts data.
+- Session: Establishes connection.
+- Transport: Segments data, adds port info.
+- Network: Adds IP addressing.
+- Data Link: Adds MAC addressing.
+- Physical: Sends bits over the medium.
+
+28. Importance of OSI Model:
+- Standardizes networking.
+- Helps in diagnosing and troubleshooting.
+
+29. Real-Life Analogy – Post Office:
+
+OSI Layer     | Analogy
+--------------|-----------------------------
+Application   | Writing a letter
+Presentation  | Translating the message
+Session       | Establishing communication
+Transport     | Choosing delivery service
+Network       | Addressing the envelope
+Data Link     | Local mail carrier
+Physical      | Delivery truck/road
+
+30. BONUS: OSI vs TCP/IP Model
+- Similarity: Both are layered models for communication.
+- Difference: OSI has 7 layers, TCP/IP has 4 layers.
+
