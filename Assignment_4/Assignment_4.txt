@@ -1,0 +1,256 @@
+
+IS HUB Summer Bootcamp – Networking Track
+Assignment 004 – Networking Basics Comprehensive Assessment
+============================================================
+
+Networking Basics – Comprehensive Answers
+-----------------------------------------
+
+1. A computer network is a group of interconnected devices that communicate to share resources and information.
+
+2. 
+- LAN: Local Area Network – e.g., Office network
+- WAN: Wide Area Network – e.g., Internet
+- MAN: Metropolitan Area Network – e.g., City-wide ISP
+- PAN: Personal Area Network – e.g., Bluetooth headset
+
+3.
+- Client-server: Centralized control. Example: Web server and browser.
+- Peer-to-peer: Equal devices. Example: File sharing between two PCs.
+
+4.
+- Resource sharing
+- Centralized data management
+- Efficient communication
+- Cost-effective
+
+5. Topologies:
+- Star
+- Bus
+- Ring
+- Mesh
+
+6.
+- Star:
+  - Advantage: Easy to troubleshoot
+  - Disadvantage: Central switch failure affects all
+- Bus:
+  - Advantage: Easy to implement
+  - Disadvantage: Data collisions
+
+7. Star topology is most common in modern LANs due to performance and easy management.
+
+Network Devices
+---------------
+
+8.
+- Switch: Connects devices in a LAN, operates at Layer 2
+- Router: Connects different networks, routes data
+- Hub: Broadcasts data to all ports
+- Access Point: Connects wireless devices to a network
+
+9.
+- Modem: Converts digital to analog
+- Router: Routes data between networks
+
+10.
+- Switch: Layer 2
+- Router: Layer 3
+
+Transmission Media
+------------------
+
+11.
+- Wired: UTP, STP, coaxial, fiber optic
+- Wireless: Wi-Fi, infrared, Bluetooth
+
+12.
+- STP: Shielded, more interference protection
+- UTP: Unshielded, cheaper and common
+
+13.
+- BNC: Coaxial cable (older networks)
+- RJ45: Ethernet cable (modern networks)
+
+14.
+- Single-mode: Long-distance, laser light
+- Multi-mode: Short-distance, LED light
+
+15.
+- Coaxial is used in cable TV, internet, CCTV
+
+Communication Models
+---------------------
+
+19.
+- Simplex: One-way
+- Half-Duplex: Both ways, one at a time
+- Full-Duplex: Both ways simultaneously
+
+20.
+- Sender, receiver, message, medium, protocol
+
+21.
+- Protocols ensure reliable and standardized communication
+
+OSI and TCP/IP Models
+----------------------
+
+22.
+1. Physical
+2. Data Link
+3. Network
+4. Transport
+5. Session
+6. Presentation
+7. Application
+
+23.
+- HTTP: Application
+- IP: Network
+- TCP: Transport
+- Ethernet: Data Link
+- DNS: Application
+- ARP: Data Link
+
+24.
+- Ensures reliable delivery
+- Protocols: TCP, UDP
+
+25.
+- Similarity: Both layered models
+- Difference: OSI has 7 layers, TCP/IP has 4
+
+26.
+- Application, Transport, Internet, Network Access
+
+27.
+- OSI: Network Layer
+- TCP/IP: Internet Layer
+
+IP Addressing and Subnetting
+----------------------------
+
+28.
+- IP Address: Unique address for a device
+- IPv4: 32-bit, e.g., 192.168.1.1
+- IPv6: 128-bit, e.g., 2001:0db8::1
+
+29.
+192.168.1.1 = 11000000.10101000.00000001.00000001
+
+30.
+11000000.10101000.00000001.00000100 = 192.168.1.4
+
+31.
+- A: 1.0.0.0 – 126.0.0.0
+- B: 128.0.0.0 – 191.255.0.0
+- C: 192.0.0.0 – 223.255.255.0
+
+32.
+- Static: Manually assigned
+- Dynamic: Assigned by DHCP
+
+33.
+- Used in internal networks
+- Ranges:
+  - 10.0.0.0/8
+  - 172.16.0.0/12
+  - 192.168.0.0/16
+
+34.
+- Loopback: 127.0.0.1 – Used for testing
+
+35.
+/24 = 256 addresses – 2 = 254 hosts
+
+36.
+/26 = 255.255.255.192 = 62 hosts
+
+37.
+- Network: 192.168.20.0
+- Broadcast: 192.168.20.31
+
+38.
+2^3 = 8 subnets from /24
+
+MAC Address and ARP
+--------------------
+
+39.
+- MAC: Physical address (hardware)
+- IP: Logical address (software)
+
+40.
+- ARP: Resolves IP to MAC address
+
+Protocols and Ports
+--------------------
+
+41.
+- HTTP: Transfers web pages, uses port 80
+
+42.
+- DNS: Resolves domain to IP
+
+43.
+- DHCP: Assigns IPs automatically
+
+44.
+1. HTTP – Web
+2. FTP – File transfer
+3. DNS – Name resolution
+4. TCP – Reliable transport
+5. ICMP – Error messages
+
+Switching and Routing
+----------------------
+
+45.
+- Switching: Within LAN, uses MAC
+- Routing: Between networks, uses IP
+
+46.
+- VLAN: Virtual LAN, segments network for efficiency/security
+
+Crimping and Cables
+--------------------
+
+16.
+- T568A: G/W, G, O/W, Blue, Blue/W, O, Br/W, Br
+- T568B: O/W, O, G/W, Blue, Blue/W, G, Br/W, Br
+
+17.
+- Straight-through: PC to switch
+- Crossover: PC to PC or switch to switch
+
+18.
+- Crimping tool
+- Cable tester
+- Wire stripper
+
+Default Gateway & Security
+---------------------------
+
+47.
+- Default Gateway: Router that connects local network to other networks
+
+48.
+1. Phishing
+2. Malware
+3. Denial of Service (DoS)
+
+49.
+- Firewall: Blocks unauthorized access
+
+50.
+- Antivirus: Detects and removes malicious software
+
+51.
+- NAT: Translates private IP to public IP, used in routers
+
+BONUS – Security Basics
+------------------------
+
+- Protects confidentiality, integrity, and availability of data
+- Includes firewalls, antivirus, strong passwords, encryption
