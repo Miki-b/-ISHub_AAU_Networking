@@ -1,0 +1,84 @@
+
+IS HUB Summer Bootcamp – Networking Track
+Assignment 003 – IP Addressing & Subnetting Concepts
+=====================================================
+
+Part A – IP Addressing Basics
+-----------------------------
+
+1. An IP address is a unique identifier assigned to each device on a network to enable communication. It is essential for identifying and locating devices.
+
+2.
+- Address length:
+  - IPv4: 32 bits
+  - IPv6: 128 bits
+- Notation format:
+  - IPv4: Decimal, e.g., 192.168.1.1
+  - IPv6: Hexadecimal, e.g., 2001:0db8::1
+- Number of available addresses:
+  - IPv4: ~4.3 billion
+  - IPv6: ~340 undecillion
+
+3. 192.168.10.1 = 11000000.10101000.00001010.00000001
+
+4. 11000000.10101000.00000001.00000010 = 192.168.1.2
+
+5.
+- Class A: 1.0.0.0 to 126.255.255.255
+- Class B: 128.0.0.0 to 191.255.255.255
+- Class C: 192.0.0.0 to 223.255.255.255
+
+6. 172.16.5.4 belongs to Class B
+
+7.
+- Public IP: Routable on the internet
+- Private IP: Used within internal networks
+  - Private Ranges:
+    - 10.0.0.0 – 10.255.255.255
+    - 172.16.0.0 – 172.31.255.255
+    - 192.168.0.0 – 192.168.255.255
+
+8. Loopback address (127.0.0.1) is used to test the network stack on a local machine.
+
+9.
+- Static IP: Manually assigned, e.g., Server IP = 192.168.1.10
+- Dynamic IP: Assigned by DHCP, e.g., Laptop gets 192.168.1.15
+
+10.
+- Class A → 255.0.0.0
+- Class B → 255.255.0.0
+- Class C → 255.255.255.0
+
+Part B – Subnetting Concepts & Calculations
+-------------------------------------------
+
+11. Subnetting divides a larger network into smaller sub-networks to improve management and performance.
+
+12. 192.168.1.0/24 has 2^8 = 256 total IP addresses
+
+13. Usable host IPs = 256 - 2 = 254
+
+14. Borrowing 2 bits → 2^2 = 4 subnets
+
+15. Borrowing 3 bits → /27 → New Subnet Mask: 255.255.255.224
+
+16. 192.168.10.0/26:
+- Hosts per subnet: 2^(32-26) - 2 = 64 - 2 = 62
+- Number of subnets: 2^(26-24) = 4
+
+17. 192.168.10.64/26:
+- First usable: 192.168.10.65
+- Last usable: 192.168.10.126
+
+18. 10.0.0.0/22:
+- Network address: 10.0.0.0
+- Broadcast address: 10.0.3.255
+
+19.
+- CIDR /30 gives 2 usable IP addresses
+- CIDR /28 supports 14 hosts per subnet
+
+20. 172.16.0.0/20:
+- To support 510 hosts → Need 9 host bits → /23
+- Subnets = 2^(23-20) = 8 subnets
+- Subnet Mask: 255.255.254.0
